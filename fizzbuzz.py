@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Jeff
+Credit: None
 
 Assignment:
 
@@ -44,3 +44,20 @@ Fizz
 Fizz
 Buzz
 """
+quan = int(input("How many numbers shall we print? "))
+a = int(input("For multiples of what number shall we print 'Fizz'? "))
+b = int(input("For multiples of what number shall we print 'Buzz'? "))
+num = 0
+while quan > 0:
+    num += 1
+    if num%a == 0 and num%b == 0:
+        print("FizzBuzz")
+    else:
+        if num%a == 0:
+            print("Fizz")
+        elif num%b == 0:
+            print("Buzz")
+        else:
+            print(num)
+    quan -= 1
+
